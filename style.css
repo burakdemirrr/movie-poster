@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    color:#FCF9F6;
+    box-sizing: border-box;
+    font-family: 'Roboto Flex', sans-serif;
+    overflow: hidden;
+
+}
+
+.wrapper{
+    min-height: 100vh;
+    width:100%;
+    background: url("the-worst-person-in-the-world-verdens-verste-menneske-c-oslo-pictures-20-.jpg") center center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    width:150px;
+}
+.first{
+    display: flex;
+    text-align: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap:40px;
+    padding:20px 50px;
+}
+.first p{
+    margin:8px 0;
+    font-size:14px;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    padding:20px 150px;
+}
+span{
+    font-size:7rem;
+    letter-spacing: 3px;
+    line-height: 5.4rem;
+}
+
+
+.second span:nth-child(2){
+    transform: translateX(-40px);
+    font-style: italic;
+}
+.second span:nth-child(3){
+    transform: translateX(100px);
+}
+.second span:nth-child(4){
+    transform: translateX(100px);
+}
+.second span:nth-child(5){
+    font-style: italic;
+}
+
+.bottom{
+    position: absolute;
+    bottom:50px;
+    left:31%;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+}
+.bottom p:nth-child(2){
+    font-size:17px;
+    margin-top:4px;
+}
