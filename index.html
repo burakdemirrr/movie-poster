@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -44,6 +46,25 @@
         <p>"a pure delight... joyful and oftentimes hilarious"</p>
         <p>the playlist</p>
     </div>  
-    
+
+    <script>
+        TweenMax.from(".first",1,{
+            opacity:0,
+            delay:.3,
+            ease:Circ.easeInOut
+        })
+        TweenMax.from("span",2,{
+            x:50,
+            duration:.5,
+            delay:.3,
+            opacity:0,
+            ease:Power2.easeInOut
+        })
+        TweenMax.from(".bottom",1,{
+            y:-100,
+            opacity:0,
+            delay:2,
+        })
+    </script>
 </body>
 </html>
